@@ -1,0 +1,274 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+
+}
+.header{
+    background-size: cover; 
+    width:100%;
+    min-height: 100vh;
+    background-image:linear-gradient(rgb(4,9,30,0.5),rgba(49, 72, 161, 0.5)),url(image/banner.png);
+    background-position:center;
+    position: relative;   
+
+}
+
+nav {
+    display: flex;
+    padding:20px 30px;
+    justify-content:space-between;
+    align-items:center;   
+
+}
+ nav img{
+     width:160px;
+ }
+ .link  {
+     flex:1;
+     text-align: right;
+ }
+ .link ul li{
+     list-style: none;
+     display: inline-block;
+     padding:8px 12px;
+     position:relative;
+     
+ }
+ .link ul li a{
+     text-decoration: none;
+     font-size: 13px;
+     color: white;
+ }
+ .link ul li a:hover{
+     color: black;
+     background-color:tomato;
+     padding:10px 20px;
+     width:30px;
+     transition: 0.10s;
+    
+ }
+ .text{
+     text-align: center;
+     width:90%;
+     color: white;
+     padding:50px;
+     display:fixed;
+ }
+ .text h1{
+    font-size:60px;
+    padding-top:80px;
+ }
+ .text p{
+     font-size: 16px;
+     margin-bottom:50px;
+     
+ }
+ .button{
+     
+     border: 3px solid white;
+     text-decoration: none;
+     padding:15px;
+     color: white;
+     font-weight: bold;
+ }
+ .button:hover{
+    background-color: tomato;
+    border:3px solid tomato;    
+ }
+ 
+ nav .fas{
+     display: none;
+ }
+
+ @media(max-width: 700px){
+    .text h1{
+        font-size:20px;
+        
+     }
+     .link ul li{
+         display:block;
+     }
+     .link {
+         position:absolute;
+         background: tomato;
+         height:100vh;
+         width:200px;
+         top:0;
+         right:-200px;
+         text-align:left;
+         z-index: 2;
+         transition: 5s;
+
+     }
+     nav .fas{
+         display: block;
+         color:#fff;
+         margin:10px;
+         font-size: 22px;
+     }
+
+ }
+ .COURSE,.campus,.facilities,.testimonial{
+     width: 80%;
+     margin:auto;
+     padding-top:80px;
+     text-align: center;
+
+ }
+  h1{
+     font-size:36px;
+     font-weight:600;
+     
+ }
+ .COURSE p{
+     color:#777;
+     font-size:14px;
+     padding:10px;
+ }
+ .row{
+     display:flex;
+     margin-top:10px;
+     justify-content: space-between;
+     padding-top: 20px;
+
+ }
+ .col{
+     background: #eee7e7;
+     border-radius: 3px;
+     box-sizing: border-box;
+     padding:20px 20px;
+     margin:10px 12px;
+     
+
+ }
+ .col:hover{
+    box-shadow: 10px 10px 20px grey;
+ }
+ @media(max-width:700px){
+     .row{
+         flex-direction: column;
+     }
+ }
+ .campus-col{
+    flex-basis: 32%;
+     border-radius: 10px;
+     margin-bottom:30px;
+     position:relative;
+     
+     
+
+ }
+ .campus-col img{
+     width:100%;
+     display:block;
+     
+ }
+ .theory{
+     background: transparent;
+     height:100%;
+     width:100%;
+     position:absolute;
+     top:0;
+     left:0;
+     transition: 0.25s;
+
+ }
+ .theory:hover{
+     background: rgba(226, 0, 0, 0.3);
+ }
+ .theory h3{
+     width:100%;
+     font-weight:500px;
+     color:#fff;
+     font-size:26px;
+     bottom:0;
+     left:50%;
+     transform:translateX(-45%);
+     position:absolute;
+     opacity:0;
+     transition: 0.5s;
+     
+
+ }
+ .theory:hover h3{
+     bottom:50%;
+     opacity:1;   
+
+ }
+ .facilities-col{
+     margin:10px 10px;
+     background: #eee7e7;
+     border-radius: 3px;
+     padding:20px 20px; 
+     text-align:left;     
+
+ }
+ .facilities-col:hover p{
+     box-sizing: content-box;
+     background: #ddd4d4;
+     box-shadow: 10px 10px 30px grey;
+ }
+ .facilities-col p{
+    font-size: 16px;
+    padding-top: 15px;
+ }
+
+ .facilities-col img{
+     width:100%;
+     border-radius:20px;
+
+ }
+ .testimonial-col{
+     flex-basis: 44%;
+     margin-left: 10px;
+     border-radius:10px;
+     margin-bottom:5%;
+     text-align:left;
+     background:#fff3f3;
+     padding:25px;
+     display:flex;
+    
+
+ }
+ .testimonial-col h4{
+     margin-top:5px;
+     margin-bottom:20px;
+ }
+ .testimonial-col p{
+     padding:3px;
+
+ }
+
+ .testimonial-col img{
+     height:50px;
+     border-radius:50%;
+     padding:5px;
+     margin-left: 30px;
+     margin-right:30px;
+ }
+ .testimonial-col .fas{
+     color: tomato;
+     padding-top:3px;
+
+ }
+ .enroll-part{
+     text-align: center;
+     width:80%;
+     background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(image/about.jpg);
+     background-position: center;
+     padding:100px 0;
+     margin:100px auto;
+     color: #fff;     
+ }
+ .enroll-part h1{
+     padding-bottom: 30px;
+ }
+
+
+ 
+ 
+
+
+
+  
